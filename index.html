@@ -23,6 +23,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="green">
         <meta name="referrer" content="origin">
         <meta name="color-scheme" content="light">
+        <meta name="theme-color" content="green">
         <meta name="classification" content="Education">
         <meta name="subject" content="Education">
         <meta name="viewport" content="width=device-width">
@@ -66,6 +67,18 @@
         <link rel="index" content="https://portablezoo.github.io">
         <link rel="alternate" content="https://portablezoo.github.io" title="Portable Zoo">
         <link rel="canonical" content="https://portablezoo.github.io">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135255146-1"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            
+            gtag('js', new Date());
+            gtag('config', 'UA-135255146-1');
+        </script>
         <title>Portable Zoo</title>
     </head>
     <body onload="move('mapBackground')">
@@ -1284,7 +1297,7 @@
                 <a class="mapAnimalLabel" id="mapManateeLabel" title="Manatee" onclick="enterManateeFacts();"><img src="assets/images/mapIcons/Manatee.svg" width="60" height="70" alt="Manatee"><button class="mapAnimalLabelText" id="mapManateeLabelText">Manatee</button></a>
                 <a class="mapAnimalLabel" id="mapMeerkatLabel" title="Meerkat" onclick="enterMeerkatFacts();"><img src="assets/images/mapIcons/Meerkat.svg" width="40" height="70" alt="Meerkat"><button class="mapAnimalLabelText" id="mapMeerkatLabelText">Meerkat</button></a>
                 <a class="mapAnimalLabel" id="mapMooseLabel" title="Moose" onclick="enterMooseFacts();"><img src="assets/images/mapIcons/Moose.svg" width="70" height="70" alt="Moose"><button class="mapAnimalLabelText" id="mapMooseLabelText">Moose</button></a>
-                <a class="mapAnimalLabel" id="mapOrangutanLabel" title="Orangutan" onclick="enterOrangutanFacts();"><img src="assets/images/mapIcons/Orangutan.svg" width="60" height="80" alt="Orangutan"><button class="mapAnimalLabelText" id="mapOrangutanLabelText">Orangutan</button></a>
+                <a class="mapAnimalLabel" id="mapOrangutanLabel" title="Orangutan" onclick="enterOrangutanFacts();"><img src="assets/images/mapIcons/Orangutan.svg" width="60" height="80" alt="Orangutan" style="position: absolute; top: -90px;"><button class="mapAnimalLabelText" id="mapOrangutanLabelText">Orangutan</button></a>
                 <a class="mapAnimalLabel" id="mapOstrichLabel" title="Ostrich" onclick="enterOstrichFacts();"><img src="assets/images/mapIcons/Ostrich.svg" width="50" height="80" alt="Ostrich"><button class="mapAnimalLabelText" id="mapOstrichLabelText">Ostrich</button></a>
                 <a class="mapAnimalLabel" id="mapPandaLabel" title="Panda" onclick="enterPandaFacts();"><img src="assets/images/mapIcons/Panda.svg" width="100" height="100" alt="Panda" style="position: absolute; top: -100px;"><button class="mapAnimalLabelText" id="mapPandaLabelText">Panda</button></a>
                 <a class="mapAnimalLabel" id="mapPenguinLabel" title="Penguin" onclick="enterPenguinFacts();"><img src="assets/images/mapIcons/Penguin.svg" width="40" height="70" alt="Penguin"><button class="mapAnimalLabelText" id="mapPenguinLabelText">Penguin</button></a>
